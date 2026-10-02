@@ -78,10 +78,10 @@
 ### US-N.4.1 — View Live Stock Level
 
 #### Scenario: View Current Stock
-*   **Given** <the warehuse manager is using the warehouse System >
-*   **When**  <the warehouse manager selects View Items>
-*   **Then**  <the system displys all items >
-*   **And**   <the system displays the current quantity of each item>
+*   **Given** the warehuse manager is using the warehouse System 
+*   **When**  the warehouse manager selects View Items
+*   **Then**  the system displys all items 
+*   **And**   the system displays the current quantity of each item
 
 #### Scenario: No Items in the stock
 *   **Given** There is no items in the inventory …
