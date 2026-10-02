@@ -4,10 +4,8 @@
 **Branch pattern:**   `Warehouse `  
 **Status:**            Draft  
 **Created:**           2026-21-09  
-**Input:**       Creating, Viewing, editing and maintaining warehouse locations  
-**Depends on:**       Company  
-**Related:**           Inventory, Supplier 
-
+**Input:**             Creating, Viewing, editing and maintaining warehouse locations  
+**Depends on:** [Company Feature](features/feature_1_)
 ---
 
 ## User Stories
@@ -36,34 +34,31 @@
 
 **Priority:**               P1  
 **Independent test:**   Change an existing warehouse address and identify that the updated address is saved and displayed
-**Acceptance scenarios:**   US-2.2: under th acceptance criteria
+**Acceptance scenarios:**   US-2.3: under th acceptance criteria
 
-### US-N.2.4:  Archive warehouse
-**As a**       As a Warehouse Manager 
-**I want to**  Archive a warehouse
-**So that**   Warehouse that are no longer being used are not treated as active warehouse
-
+### US-N.2.4:  Delete warehouse
+**As a**       As a Warehouse Manager  
+**I want to**  Delete a warehouse
+**So that**   Warehouse that are no longer being desappers from the company 
 **Priority:**               P1  
-**Independent test:**   Archive an active warehouse and verify that its status changes to active
-**Acceptance scenarios:**   US-2.2: under th acceptance criteria
+**Independent test:** Create a warehouse with WH001 and Delete it, view warehouse and see , it will no longer exists.
+**Acceptance scenarios:**   US-2.4: under th acceptance criteria
 
 
 
 ### Functional Requirements
 
-- **FR-001**: System Must assign every warehouse a unique identifier
-- **FR-002**: System Must alllow an authorised Warehouse Manager to view warehouse information
-- **FR-003**: System must allow an outhorised  Warehouse Manager toview Warehouse infor information
-- **FR-004**: System MUST allow an authorized Warehouse Manager to edit warehouse information.
-- **FR-005**: System MUST allow an authorized Warehouse Manager to archive a warehouse.
-- **FR-006**: System MUST associate each warehouse with a company.
-- **FR-006**: System MUST prevent unauthorized users from modifying warehouse information.
+- **FR-001**: System Must allow the warehouse Manager to view the warehouses that the company have
+- **FR-002**: System Must allow an authorised Aware house manager to create a warehouse with the unique Code.
+- **FR-003**: System must allow an outhorised  Warehouse Manager to eddit the infromation of an existing Warehouse when needed
+- **FR-004**: System MUST allow an authorized Warehouse Manager to delete the warehouse when no longer works.
+
 
 ## Key Entities
 
 - **Warehouse**: Represents a physical location where inventory is stored.
 - **Company**:   The company Associated with the warehouse 
-- **Company**  Stock maintained at a warehouse .
+
 - **relationships** Stock maintained at a warehouse .
 - one **Company** can have multiple **Warehouses**
 - one **Warehouse** cab contain Multiple **Items**
@@ -74,20 +69,14 @@
 ## Data Model Requirements
 
 ### `Warehouse` table
-------------------------------------------------------------
-| Field              | Type         | Rules                  |
-|-------             |------        |-------                 |
-| `warehouse_id`     | INTEGER PK   |Auto-increment, unique  |
-| `warehouse_name`   |VARCHAR(100)  |Required                |
-| `warehouse_code`   |VARCHAR       |Required , unique       |
-| `address`          |VARCHAR(255)  |required                |
-| `company_id`       | INTEGER FK   |required                |
-| `status`           |VARCHAR(20)   |Active, Inactive        |
-| `created_at`       |DATETIME      |Required                | 
 
-### Associations (if known)
-- …
-
+ Field              Description
+-------            
+ `warehouse_id`     : This is the unique id  
+ `warehouse_name`   : This is the name  of the Warehouse
+ `warehouse_code`   : This is the code that is unique
+ `address`          : This is the Physical location           
+ `created_at`       : This is the time when the warehouse were created 
 ---
 
 ## Acceptance Criteria
@@ -130,12 +119,12 @@
 *   **Then**  the system saves the updated informmation  …
 *   **And**   displays the updated warehouse
 
-### US-N.2.3 — Archive warehouse 
+### US-N.2.4 — Delete warehouse 
 
-#### Scenario:  Archive warehouse
-*   **Given**  an active warehouse exist…
-*   **When**   The warehouse Manager archives the waarehouse
-*   **Then**   the warehouse status changes to inactive …
+#### Scenario:  Delete warehouse
+*   **Given**  an active warehouse exist and No longer works…
+*   **When**   The Awarehouse deletes it
+*   **Then**   the warehouse desappeas from the lists…
 
 #### Scenario: Unauthorized update
 *   **Given**  The user is not authorized to manage warehouses…

@@ -1,18 +1,18 @@
 # Feature: <Items>
 
-**Feature ID:**        N01  
+**Feature ID:**        N04  
 **Branch pattern:**   `Items/ `  
 **Status:**            Draft  
 **Created:**           2026-21-09  
 **Input:**            Creating, updating, inspecting, and archiving individual items in the product catalog.
-**Depends on:**        [Feature X — …](features\Items.md)  
+**Depends on:**        [Feature X — …](features\feature_5_Inventory.md)  
 **Related:**          Feature1( Inventory),
 
 ---
 
 ## User Stories
 
-### US-N.2.1: View Live Stock level
+### US-N.4.1: View Live Stock level
 **As a**       a Warehouse Manager /System User
 **I want to**  View detailed inforsmtion about a specific Item(SKU,UPC,Price,Supplier,Description)
 **So that**   Ican identify products correctly across operations.
@@ -21,7 +21,7 @@
 **Independent test:**       Select an item from the catalog; verufy SKU,UPC, PRICE ,Supplier details and description display accurately.
 **Acceptance scenarios:**   US-1.1: under th acceptance criteria
 
-### US-N.2.2: Maintain Catalog Items    
+### US-N.4.2: Maintain Catalog Items    
 **As a**       an authorized Administratior/Purchasing Manging
 **I want to**  Add a new items edit item details, or archieve obselete items
 **So that**   The item caltalog stays accurate and up to date
@@ -30,7 +30,7 @@
 **Independent test:**      If an item is added, editted, or deleted i can view the updates.
 **Acceptance scenarios:**  see ### US-N.1.2 under the acceptance criteria
 
-### US-N.1.3:Automated warning
+### US-N.4.3:Automated warning
 **As a**        Application
 **I want to**   Display the warning message 
 **When**        The item is bellow the minimum.
@@ -64,23 +64,18 @@
 ## Data Model Requirements
 
 ### `Item` table
-| Field              | Type         | Rules                   |
-|-------             |------        |-------                  |
-| `item_id`          | INTEGER PK   | Auto-increment, unique  |
-| `sku`              |VARCHAR(100)  |Required, unique, Indexed|
-| `upc     `         |VARCHAR(50)   |Optional,Unique          |
-| `item_name`        |VARCHAR(100)  |Require                  |
-| `maximum_quantity` |INTEGER       |required                 |
-| `unit_price `      |decimal(10,2) |Optional                 | 
-
-### Associations (if known)
-- …
-
----
+ Field              
+         
+ `item_id`          : this the unique id for the item        
+ `sku`              : unique inventory item code
+ `upc     `         :unique inventory item code 
+ `item_name`        : thi is the nam of an item
+ `Max_quantity`     : maximum quantity for the item
+  `Min_quantity`    : this is the minimum quantity
 
 ## Acceptance Criteria
 
-### US-N.1 — View Live Stock Level
+### US-N.4.1 — View Live Stock Level
 
 #### Scenario: View Current Stock
 *   **Given** <the warehuse manager is using the warehouse System >
@@ -93,7 +88,7 @@
 *   **When**  The warehouse manager selects View the Item …
 *   **Then**  The system displays a nessage indicating that no item is available…
 
-### US-N.2 — Update the Stock
+### US-N.4.2 — Update the Stock
 
 #### Scenario: Add an Item
 *   **Given** Given the warehouse manager is authorized…
@@ -116,7 +111,7 @@
 *   **When**  The user tries to add ,edit, or delete an item …
 *   **Then**  The system does not allow the change …
 
-### US-N.2 — Automated Warning
+### US-N.4.3 — Automated Warning
 
 #### Scenario: Item is below minimum quantity
 *   **Given**  An item has a defined minimum quantity…
