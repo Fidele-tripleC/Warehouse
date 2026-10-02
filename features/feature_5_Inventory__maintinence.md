@@ -1,36 +1,52 @@
 # Feature: <Inventory>
 
-**Feature ID:**        N01  
+**Feature ID:**        N05  
 **Branch pattern:**   `inventory/ `  
 **Status:**            Draft  
 **Created:**           2026-21-09  
 **Input:**             Tracking, inspecting, and maintaining the inventory.
-**Depends on:**        [Feature X — …](feature-X-….md)  
+**Depends on:**        [Feature X — …](features\feature_5_Inventory.md)  
 **Related:**           optional links to ADRs or reference docs  
 
 ---
 
 ## User Stories
 
-### US-N.1.1: View Live Stock level
+### US-N.5.1: View Live Stock level
 **As a**       a Warehouse Manager 
 **I want to**  View the current quantity of each Item in the stock
 **So that**    I know what items are available in the stock
 
 **Priority:**               P1  
 **Independent test:**       select view the items, the system must display each item and the current quantity in the stock
-**Acceptance scenarios:**   US-1.1: under th acceptance criteria
+**Acceptance scenarios:**   US-1.1: under th acceptance criteria ##5.1
 
-### US-N.1.2: Update the Stock    
+### US-N.5.2: Add an imventory    
 **As a**       As a warehouse Manager 
-**I want to**  To add, edit, or delete items 
-**So that**    Ican have the updated current item's quantity in the stock
+**I want to**  To add an inventory 
+**So that**    Ican have the inventory information
 
 **Priority:**              P1  
-**Independent test:**      If an item is added, editted, or deleted i can view the updates.
+**Independent test:**      if inventory is added it will appear on the list of the inventories
 **Acceptance scenarios:**  see ### US-N.1.2 under the acceptance criteria
 
-### US-N.1.3:Automated warning
+### US-N.5.3: Update an inventory    
+**As a**       As a warehouse Manager 
+**I want to**  To update the inventory information 
+**So that**    i can have the updted information of the inventory
+**Priority:**              P1  
+**Independent test:**      if an inventory name is eddited the new name appears on the list of the informations
+**Acceptance scenarios:**  see ### US-N.1.2 under the acceptance criteria
+
+### US-N.5.4:   update the inventory  
+**As a**       As a warehouse Manager 
+**I want to**  To update the inventory information 
+**So that**    i can have the updted information of the inventory
+**Priority:**              P1  
+**Independent test:**      if an inventory name is eddited the new name appears on the list of the informations
+**Acceptance scenarios:**  see ### US-N.1.2 under the acceptance criteria
+
+### US-N.5.5:Automated warning
 **As a**        Application
 **I want to**   Display the warning message 
 **When**        The item is bellow the minimum.
@@ -47,46 +63,38 @@
 ### Functional Requirements
 
 - **FR-001**: System shall display the currents Stock quantity of each item in a warehouse.
-- **FR-002**: System  MUST allow the authorised wharehouse manager to add, edddit and delete the item.
-- **FR-003**: the system Must give the warning to the warehouse manager when given type of the item goes below the minimum quantity… 
+- **FR-002**: System  MUST allow the authorised inventory manager to adda an inventory
+- **FR-002**: System  MUST allow the authorised inventory manager to eddit the inventory information
+- **FR-002**: System  MUST allow the authorised inventory manager to delete 
+- **FR-003**: the system Must give the warning to the inventory manager when given type of the item goes below the minimum quantity… 
 
 ---
-
-
-
 ## Key Entities
 
-- **Entity**: short description; relationships in plain language
-- **Entity**: …
+- **Inventory**: a named stock collection (e.g., a warehouse). Contains many Items.
+- **Item**: a stocked product with a quantity and min/max thresholds. Belongs to one Inventory.
+- **Warehouse Manager**: the authorized user who manages Items.
 
 ---
 
 ## Data Model Requirements
 
 ### `Inventory` table
-| Field              | Type         | Rules                  |
-|-------             |------        |-------                 |
-| `item_id`          | INTEGER PK   | Auto-increment, unique |
-| `item_name`        |VARCHAR(100)  |Required                |
-| `Quantity`         |INTEGER       |Require                 |
-| `minimum_qantity`  |INTEGER       |Require                 |
-| `maximum_quantity` |INTEGER       |required                |
-| `Description`      |VARCHAR(255)  |Optional                | 
+ Field                        
+ `inventory_id`     : this is the  unique id for the inventory       
+ `inventory_name`   : this is the name of th inventory        
+ `Description`      : this is the short description for the inventory    
 
-### Associations (if known)
-- …
-
----
 
 ## Acceptance Criteria
 
-### US-N.1 — View Live Stock Level
+### US-N.5.1 — View Live Stock Level
 
 #### Scenario: View Current Stock
-*   **Given** <the warehuse manager is using the warehouse System >
-*   **When**  <the warehouse manager selects View Items>
-*   **Then**  <the system displys all items in the inventory>
-*   **And**   <the system displays the current quantity of each item>
+*   **Given** the warehuse manager is using the warehouse System 
+*   **When**  the warehouse manager selects View Items
+*   **Then**  the system displys all items in the inventory
+*   **And**   the displys the inventory with the 
 
 #### Scenario: No Items in the stock
 *   **Given** There is no items in the inventory …

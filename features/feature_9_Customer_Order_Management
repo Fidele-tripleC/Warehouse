@@ -1,0 +1,209 @@
+# Feature: Customer Order
+
+**Feature ID:**        N09 
+**Branch pattern:**    `customer-order/<short-description>`
+**Status:**            Draft
+**Created:**           2026-10-02
+**Input:**             Create, view, edit, submit, fulfill, and cancel orders placed by customers.
+**Depends on:**        [Customer](features/feature_7_customer.md), [Inventory](features/feature_5_Inventory.md) 
+**Related:**           Supplier Order, Warehouse
+
+---
+
+## User Stories
+
+### US-N09.1: Create customer order
+**As a**       Warehouse Manager
+**I want to**  create an order for a customer
+**So that**    the items a customer wants can be recorded and prepared
+
+**Priority:**             P1
+**Independent test:**     Create an order for 10 units of an item for an Active customer; the order is saved as Draft with the correct customer, item, and quantity.
+**Acceptance scenarios:** See AC-N06.1
+
+### US-N09.2: View customer orders
+**As a**       Warehouse Manager
+**I want to**  view customer orders
+**So that**    I can see what customers have ordered and the status of each order
+
+**Priority:**             P1
+**Independent test:**     Create a customer order; it appears in the order list with its status.
+**Acceptance scenarios:** See AC-N06.2
+
+### US-N09.3: Edit customer order
+**As a**       Warehouse Manager
+**I want to**  edit an order before it is submitted
+**So that**    incorrect order information can be corrected
+
+**Priority:**             P1
+**Independent test:**     Change an order quantity from 10 to 12; the updated quantity is saved.
+**Acceptance scenarios:** See AC-N06.3
+
+### US-N09.4: Submit customer order
+**As a**       Warehouse Manager
+**I want to**  submit a completed order
+**So that**    the order is confirmed and ready to be fulfilled
+
+**Priority:**             P1
+**Independent test:**     Submit a Draft order whose items are all in stock; its status changes to Submitted.
+**Acceptance scenarios:** See AC-N06.4
+
+### US-N09.5: Fulfill customer order
+**As a**       Warehouse Manager
+**I want to**  mark a submitted order as fulfilled
+**So that**    stock levels are reduced to reflect the items sent to the customer
+
+**Priority:**             P1
+**Independent test:**     Fulfill a Submitted order for 10 units of an item with 50 in stock; the status becomes Fulfilled and the item's stock becomes 40.
+**Acceptance scenarios:** See AC-N06.5
+
+### US-N09.6: Cancel customer order
+**As a**       Warehouse Manager
+**I want to**  cancel an order that will not be fulfilled
+**So that**    the list only shows orders that are still active
+
+**Priority:**             P2
+**Independent test:**     Cancel a Draft or Submitted order; its status changes to Cancelled and stock is unchanged.
+**Acceptance scenarios:** See AC-N06.6
+
+---
+
+## Requirements
+
+### Functional Requirements
+
+- **FR-001**: The system MUST assign every customer order a unique identifier.
+- **FR-002**: The system MUST associate each order with an Active customer.
+- **FR-003**: The system MUST allow authorized users to create and view customer orders.
+- **FR-004**: The system MUST record the items and quantities being ordered.
+- **FR-005**: The system MUST allow only Draft orders to be edited.
+- **FR-006**: The system MUST maintain the order status (Draft, Submitted, Fulfilled, Cancelled).
+- **FR-007**: The system MUST reject order items with a quantity of zero or less.
+- **FR-008**: The system MUST NOT allow an order with no items to be submitted.
+- **FR-009**: The system MUST reject submission if any item's requested quantity exceeds its current stock.
+- **FR-010**: The system MUST reduce each item's stock by the ordered quantity when an order is fulfilled.
+- **FR-011**: The system MUST allow Draft and Submitted orders to be cancelled, and MUST NOT allow Fulfilled orders to be cancelled.
+- **FR-012**: The system MUST prevent unauthorized users from creating, editing, submitting, fulfilling, or cancelling customer orders.
+---
+
+## Key Entities
+
+- **Customer Order**: an order placed by one Customer. Contains one or more Order Items.
+- **Customer**: the person or company placing the order (see N07). One Customer can have many Customer Orders.
+- **Order Item**: one line of an order: an Inventory Item and the quantity ordered. Belongs to one Customer Order.
+- **Inventory Item**: a stocked item (see N05) that can be ordered.
+- **Warehouse Manager**: the authorized user who manages customer orders.
+
+---
+
+## Data Model Requirements
+
+### `customer_order` table
+ Field 
+
+ `order_id`    : This is the unique identity for the order 
+ `order_code`  : this is the ubnique code
+  `created_at` : this is the time it was created 
+ `updated_at`  : this si the time the order was updated 
+ `submitted_at`: this is thr time the order was submitted 
+ `fulfilled_at`: this it the tiem the order was fullfilled
+
+---
+
+## Acceptance Criteria
+
+### AC-N09.1 — Create Customer Order
+
+#### Scenario: Create order
+* **Given** an Active customer exists
+* **When**  the Warehouse Manager creates an order with valid items and quantities
+* **Then**  the system saves the order with status Draft
+* **And**   assigns it a unique identifier
+
+#### Scenario: Invalid quantity
+* **Given** the Warehouse Manager is creating an order
+* **When**  the quantity is zero or less
+* **Then**  the system rejects the order item and shows a validation error
+
+#### Scenario: Inactive customer
+* **Given** a customer has status Inactive
+* **When**  the Warehouse Manager tries to create an order for that customer
+* **Then**  the system rejects the order
+
+### AC-N09.2 — View Customer Orders
+
+#### Scenario: View orders
+* **Given** customer orders exist
+* **When**  the Warehouse Manager selects "View Customer Orders"
+* **Then**  the system displays the orders with their customers and current statuses
+
+#### Scenario: No orders
+* **Given** no customer orders exist
+* **When**  the Warehouse Manager selects "View Customer Orders"
+* **Then**  the system displays a message that no orders are available
+
+### AC-N09.3 — Edit Customer Order
+
+#### Scenario: Edit Draft order
+* **Given** a customer order has Draft status
+* **When**  the Warehouse Manager changes the order
+* **Then**  the system saves the updated information
+
+#### Scenario: Edit non-Draft order
+* **Given** a customer order has status Submitted, Fulfilled, or Cancelled
+* **When**  the Warehouse Manager tries to edit it
+* **Then**  the system rejects the change
+
+### AC-N09.4 — Submit Customer Order
+
+#### Scenario: Submit order
+* **Given** a Draft order has at least one item and enough stock for every item
+* **When**  the Warehouse Manager submits the order
+* **Then**  the status changes to Submitted
+
+#### Scenario: Insufficient stock
+* **Given** a Draft order requests more of an item than is in stock
+* **When**  the Warehouse Manager submits the order
+* **Then**  the system rejects the submission
+* **And**   the message identifies the item with insufficient stock
+
+#### Scenario: Submit empty order
+* **Given** a Draft order has no items
+* **When**  the Warehouse Manager tries to submit it
+* **Then**  the system rejects the submission and shows an error
+
+### AC-N09.5 — Fulfill Customer Order
+
+#### Scenario: Fulfill order
+* **Given** an order has status Submitted
+* **When**  the Warehouse Manager fulfills the order
+* **Then**  the status changes to Fulfilled
+* **And**   each item's stock is reduced by the ordered quantity
+
+#### Scenario: Fulfillment triggers low-stock warning
+* **Given** fulfilling an order brings an item's quantity below its minimum
+* **When**  the order is fulfilled
+* **Then**  the system displays the low-stock warning defined in N05
+
+#### Scenario: Fulfill non-Submitted order
+* **Given** an order has status Draft, Fulfilled, or Cancelled
+* **When**  the Warehouse Manager tries to fulfill it
+* **Then**  the system rejects the action
+
+### AC-N09.6 — Cancel Customer Order
+
+#### Scenario: Cancel order
+* **Given** an order has status Draft or Submitted
+* **When**  the Warehouse Manager cancels it
+* **Then**  the status changes to Cancelled
+* **And**   stock levels are unchanged
+
+#### Scenario: Cancel Fulfilled order
+* **Given** an order has status Fulfilled
+* **When**  the Warehouse Manager tries to cancel it
+* **Then**  the system rejects the action
+
+#### Scenario: Unauthorized change
+* **Given** the user is not authorized to manage customer orders
+* **When**  they try to create, edit, submit, fulfill, or cancel an order
+* **Then**  the system rejects the change
