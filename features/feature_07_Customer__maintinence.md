@@ -1,58 +1,52 @@
-# Feature: Customer
+﻿# Feature: Customer
 
-**Feature ID:**        N07
-**Branch pattern:**    `customer/<short-description>`
-**Status:**            Draft
-**Created:**           2026-09-21
-**Input:**             Create, view, edit, and maintain customer information.
-**Depends on:**        [Authentication & Roles](features/feature_1_auth.md) 
-**Related:**           Customer Orders, Inventory, Warehouse
+**Feature ID:**        N07  
+**Branch pattern:**    `feature/7-customer`  
+**Status:**            Draft  
+**Created:**           2026-09-21  
+**Input:**             Create, view, edit, and maintain customer information.  
+**Depends on:**        [Company](feature_01_Company_maintinence.md)  
+**Related:**           [Customer Order](feature_09_Customer_Order_Management.md), [Inventory](feature_05_Inventory__maintinence.md), [Warehouse](feature_02_Warehouse__maintinence.md), [Ship Customer Order](feature_14_ship_customer_order.md), [Route](feature_10_route_maintenence.md)
 
 ---
 
 ## User Stories
 
 ### US-N07.1: View customers
-**As a**       Warehouse Manager
-**I want to**  view all customers
-**So that**    I can see the customers maintained by the company
-
-**Priority:**             P1
-**Independent test:**     Select "View Customers"; the system displays all existing customers and their information.
+**As a**       Warehouse Manager  
+**I want to**  view all customers  
+**So that**    I can see the customers maintained by the company  
+**Priority:**             P1  
+**Independent test:**     Select "View Customers"; the system displays all existing customers and their information.  
 **Acceptance scenarios:** See AC-N07.1
 
 ### US-N07.2: Add customer
-**As a**       Warehouse Manager
-**I want to**  add a customer
-**So that**    customer information is stored and can be used when creating customer orders
-
-**Priority:**             P1
-**Independent test:**     Enter valid customer information; the customer is saved and appears in the customer list.
+**As a**       Warehouse Manager  
+**I want to**  add a customer  
+**So that**    customer information is stored and can be used when creating customer orders  
+**Priority:**             P1  
+**Independent test:**     Enter valid customer information; the customer is saved and appears in the customer list.  
 **Acceptance scenarios:** See AC-N07.2
 
 ### US-N07.3: Edit customer
-**As a**       Warehouse Manager
-**I want to**  edit customer information
-**So that**    customer records remain accurate
-
-**Priority:**             P1
-**Independent test:**     Change an existing customer's phone number; the updated number is saved and displayed.
+**As a**       Warehouse Manager  
+**I want to**  edit customer information  
+**So that**    customer records remain accurate  
+**Priority:**             P1  
+**Independent test:**     Change an existing customer's phone number; the updated number is saved and displayed.  
 **Acceptance scenarios:** See AC-N07.3
 
 ### US-N07.4: Archive customer
-**As a**       Warehouse Manager
-**I want to**  archive a customer
-**So that**    customers who are no longer active are not treated as active
-
-**Priority:**             P1
-**Independent test:**     Archive an active customer; the customer's status changes to Inactive.
+**As a**       Warehouse Manager  
+**I want to**  archive a customer  
+**So that**    customers who are no longer active are not treated as active  
+**Priority:**             P1  
+**Independent test:**     Archive an active customer; the customer's status changes to Inactive.  
 **Acceptance scenarios:** See AC-N07.4
 
 ---
 
-## Requirements
-
-### Functional Requirements
+## Functional Requirements
 
 - **FR-001**: The system MUST assign every customer a unique identifier.
 - **FR-002**: The system MUST allow an authorized user to add a customer.
@@ -82,18 +76,18 @@
 
 ### `customer` table
 
- `customer_code`   : this is the unique code for the customer
- `customer_name`   : this is the identification code for the customer
- `customer_email`  : this is the workin
- `customer_phone`  : this is the working email of the customer
+ `customer_code`   : this is the unique code for the customer  
+ `customer_name`   : this is the identification code for the customer  
+ `customer_email`  : this is the working  
+ `customer_phone`  : this is the working email of the customer  
  `address`         : this is the phone number of the customer  
- `status`        
-    
+ `status`          : this is Active or Inactive
+
 ---
 
 ## Acceptance Criteria
 
-### AC-N07.1 — View Customers
+### AC-N07.1 â€” View Customers
 
 #### Scenario: View existing customers
 * **Given** customers exist in the system
@@ -104,9 +98,10 @@
 #### Scenario: No customers
 * **Given** no customers exist
 * **When**  the Warehouse Manager selects "View Customers"
-* **Then**  the system displays a message that no customers are available
+* **Then**  the customer list is empty
+* **And**   the system displays "No customers are available"
 
-### AC-N07.2 — Add Customer
+### AC-N07.2 â€” Add Customer
 
 #### Scenario: Add customer
 * **Given** the Warehouse Manager is authorized
@@ -118,14 +113,16 @@
 #### Scenario: Duplicate customer code
 * **Given** a customer with code `CUS001` already exists
 * **When**  another customer is added using `CUS001`
-* **Then**  the system rejects it and displays a duplicate customer code message
+* **Then**  the new customer is not saved
+* **And**   the system displays "Duplicate customer code"
 
 #### Scenario: Invalid customer data
 * **Given** the Warehouse Manager is authorized
 * **When**  they submit a customer with an empty name or malformed email
-* **Then**  the system rejects it and displays a validation error
+* **Then**  the customer is not saved
+* **And**   the system displays "Invalid customer data"
 
-### AC-N07.3 — Edit Customer
+### AC-N07.3 â€” Edit Customer
 
 #### Scenario: Edit customer
 * **Given** a customer exists
@@ -133,15 +130,17 @@
 * **Then**  the system saves the updated information
 * **And**   displays the updated customer information
 
-### AC-N07.4 — Archive Customer
+### AC-N07.4 â€” Archive Customer
 
 #### Scenario: Archive customer
 * **Given** an Active customer exists
 * **When**  the Warehouse Manager archives the customer
 * **Then**  the customer's status changes to Inactive
 * **And**   the customer no longer appears in the default (Active) list
+* **And**   the system displays "Customer archived"
 
 #### Scenario: Unauthorized change
 * **Given** the user is not authorized to manage customers
 * **When**  they attempt to add, edit, or archive a customer
-* **Then**  the system rejects the change
+* **Then**  the customer is not changed
+* **And**   the system displays "You are not authorized to manage customers"
