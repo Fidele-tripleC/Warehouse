@@ -5,8 +5,8 @@
 **Status:**            Draft  
 **Created:**           2026-09-21  
 **Input:**             Creating, viewing, editing, and maintaining employee records  
-**Depends on:**        [Company](feature_1_Company_maintinence .md)  
-**Related:**           [Warehouse](feature_2_Warehouse__maintinence.md), [Customer Order](feature_9_Customer_Order_Management), [Supplier Order](feature_8_Supplier_order_Management.md)
+**Depends on:**        [Company](feature_01_Company_maintinence.md)  
+**Related:**           [Warehouse](feature_02_Warehouse__maintinence.md), [Customer Order](feature_09_Customer_Order_Management.md), [Supplier Order](feature_08_Supplier_order_Management.md)
 
 ---
 

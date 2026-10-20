@@ -5,8 +5,8 @@
 **Status:**            Draft  
 **Created:**           2026-09-21  
 **Input:**             Create, view, edit, submit, and track purchase orders sent to suppliers.  
-**Depends on:**        [Supplier](feature_3_Supplier__maintinence.md), [Inventory](feature_5_Inventory__maintinence.md), [Items](feature_4_Items__maintinence.md)  
-**Related:**           [Warehouse](feature_2_Warehouse__maintinence.md), [Receive Supplier Order](feature_13_receive_supplier_order.md), [Put Away](feature_11_put_away.md), [Supplier Did Not Ship](feature_17_supplier_did_not_ship.md)
+**Depends on:**        [Supplier](feature_03_Supplier__maintinence.md), [Inventory](feature_05_Inventory__maintinence.md), [Items](feature_04_Items__maintinence.md)  
+**Related:**           [Warehouse](feature_02_Warehouse__maintinence.md), [Receive Supplier Order](feature_13_receive_supplier_order.md), [Put Away](feature_11_put_away.md), [Supplier Did Not Ship](feature_17_supplier_did_not_ship.md)
 
 ---
 

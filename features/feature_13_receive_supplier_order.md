@@ -5,8 +5,8 @@
 **Status:**            Draft  
 **Created:**           2026-19-10  
 **Input:**             Receiving items that arrive from a supplier order.
-**Depends on:**        [Supplier](feature_3_Supplier__maintinence.md), [Supplier Order](feature_8_Supplier_order_Management.md), [Items](feature_4_Items__maintinence.md)
-**Related:**           [Put Away](feature_11_put_away.md), [Inventory](feature_5_Inventory__maintinence.md), [Warehouse](feature_2_Warehouse__maintinence.md)
+**Depends on:**        [Supplier](feature_03_Supplier__maintinence.md), [Supplier Order](feature_08_Supplier_order_Management.md), [Items](feature_04_Items__maintinence.md)
+**Related:**           [Put Away](feature_11_put_away.md), [Inventory](feature_05_Inventory__maintinence.md), [Warehouse](feature_02_Warehouse__maintinence.md)
 ---
 
 ## User Stories

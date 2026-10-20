@@ -5,8 +5,8 @@
 **Status:**            Draft  
 **Created:**           2026-19-10  
 **Input:**             Picking items from a warehouse location for a customer order and updating inventory.
-**Depends on:**        [Warehouse](feature_2_Warehouse__maintinence.md), [Items](feature_4_Items__maintinence.md), [Inventory](feature_5_Inventory__maintinence.md), [Customer Order](feature_9_Customer_Order_Management)
-**Related:**           [Put Away](feature_11_put_away.md), [Ship Customer Order](feature_14_ship_customer_order.md), [Deliver Customer Order](feature_15_deliver_customer_order.md), [Route](feature_10_route_maintenence)
+**Depends on:**        [Warehouse](feature_02_Warehouse__maintinence.md), [Items](feature_04_Items__maintinence.md), [Inventory](feature_05_Inventory__maintinence.md), [Customer Order](feature_09_Customer_Order_Management.md)
+**Related:**           [Put Away](feature_11_put_away.md), [Ship Customer Order](feature_14_ship_customer_order.md), [Deliver Customer Order](feature_15_deliver_customer_order.md), [Route](feature_10_route_maintenence.md)
 ---
 
 ## User Stories

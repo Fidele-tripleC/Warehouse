@@ -5,8 +5,8 @@
 **Status:**            Draft  
 **Created:**           2026-19-10  
 **Input:**             Showing deliveries that do not match what was shipped.
-**Depends on:**        [Ship Customer Order](feature_14_ship_customer_order.md), [Deliver Customer Order](feature_15_deliver_customer_order.md), [Route](feature_10_route_maintenence), [Customer Order](feature_9_Customer_Order_Management)
-**Related:**           [Customer](feature_7_Customer__maintinence__maintinence.md), [Warehouse](feature_2_Warehouse__maintinence.md)
+**Depends on:**        [Ship Customer Order](feature_14_ship_customer_order.md), [Deliver Customer Order](feature_15_deliver_customer_order.md), [Route](feature_10_route_maintenence.md), [Customer Order](feature_09_Customer_Order_Management.md)
+**Related:**           [Customer](feature_07_Customer__maintinence.md), [Warehouse](feature_02_Warehouse__maintinence.md)
 ---
 
 ## User Stories

@@ -6,7 +6,7 @@
 **Created:**           2026-09-21  
 **Input:**             Company registration, company information management, and company status management.  
 **Depends on:**        None  
-**Related:**           [Warehouse](feature_2_Warehouse__maintinence.md)
+**Related:**           [Warehouse](feature_02_Warehouse__maintinence.md)
 
 ---
 

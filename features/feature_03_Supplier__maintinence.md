@@ -5,8 +5,8 @@
 **Status:**            Draft  
 **Created:**           2026-09-21  
 **Input:**             Supplier registration, supplier management, purchase ordering, and supplier performance tracking.  
-**Depends on:**        [Company](feature_1_Company_maintinence .md)  
-**Related:**           [Supplier Order](feature_8_Supplier_order_Management.md), [Inventory](feature_5_Inventory__maintinence.md), [Receive Supplier Order](feature_13_receive_supplier_order.md), [Supplier Did Not Ship](feature_17_supplier_did_not_ship.md)
+**Depends on:**        [Company](feature_01_Company_maintinence.md)  
+**Related:**           [Supplier Order](feature_08_Supplier_order_Management.md), [Inventory](feature_05_Inventory__maintinence.md), [Receive Supplier Order](feature_13_receive_supplier_order.md), [Supplier Did Not Ship](feature_17_supplier_did_not_ship.md)
 
 ---
 

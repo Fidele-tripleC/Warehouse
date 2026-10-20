@@ -5,8 +5,8 @@
 **Status:**            Draft  
 **Created:**           2026-09-21  
 **Input:**             Creating, updating, inspecting, and archiving individual items in the product catalog.  
-**Depends on:**        [Inventory](feature_5_Inventory__maintinence.md)  
-**Related:**           [Put Away](feature_11_put_away.md), [Picking](feature_12_picking.md), [Supplier Order](feature_8_Supplier_order_Management.md), [Customer Order](feature_9_Customer_Order_Management), [Out of Stock](feature_16_out_of_stock.md), [Monthly Shipping Quantities](feature_19_monthly_shipping_quantities.md)
+**Depends on:**        [Inventory](feature_05_Inventory__maintinence.md)  
+**Related:**           [Put Away](feature_11_put_away.md), [Picking](feature_12_picking.md), [Supplier Order](feature_08_Supplier_order_Management.md), [Customer Order](feature_09_Customer_Order_Management.md), [Out of Stock](feature_16_out_of_stock.md), [Monthly Shipping Quantities](feature_19_monthly_shipping_quantities.md)
 
 ---
 

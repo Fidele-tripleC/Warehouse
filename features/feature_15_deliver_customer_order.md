@@ -5,8 +5,8 @@
 **Status:**            Draft  
 **Created:**           2026-19-10  
 **Input:**             Delivering a shipped customer order and recording the check / confirmation.
-**Depends on:**        [Ship Customer Order](feature_14_ship_customer_order.md), [Customer Order](feature_9_Customer_Order_Management), [Customer](feature_7_Customer__maintinence__maintinence.md)
-**Related:**           [Route](feature_10_route_maintenence), [Delivery Does Not Match Ship](feature_18_delivery_does_not_match_ship.md), [Warehouse](feature_2_Warehouse__maintinence.md)
+**Depends on:**        [Ship Customer Order](feature_14_ship_customer_order.md), [Customer Order](feature_09_Customer_Order_Management.md), [Customer](feature_07_Customer__maintinence.md)
+**Related:**           [Route](feature_10_route_maintenence.md), [Delivery Does Not Match Ship](feature_18_delivery_does_not_match_ship.md), [Warehouse](feature_02_Warehouse__maintinence.md)
 ---
 
 ## User Stories

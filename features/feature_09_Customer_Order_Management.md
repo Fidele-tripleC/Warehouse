@@ -5,8 +5,8 @@
 **Status:**            Draft  
 **Created:**           2026-10-02  
 **Input:**             Create, view, edit, submit, fulfill, and cancel orders placed by customers.  
-**Depends on:**        [Customer](feature_7_Customer__maintinence__maintinence.md), [Inventory](feature_5_Inventory__maintinence.md), [Items](feature_4_Items__maintinence.md)  
-**Related:**           [Warehouse](feature_2_Warehouse__maintinence.md), [Put Away](feature_11_put_away.md), [Picking](feature_12_picking.md), [Ship Customer Order](feature_14_ship_customer_order.md), [Deliver Customer Order](feature_15_deliver_customer_order.md), [Route](feature_10_route_maintenence)
+**Depends on:**        [Customer](feature_07_Customer__maintinence.md), [Inventory](feature_05_Inventory__maintinence.md), [Items](feature_04_Items__maintinence.md)  
+**Related:**           [Warehouse](feature_02_Warehouse__maintinence.md), [Put Away](feature_11_put_away.md), [Picking](feature_12_picking.md), [Ship Customer Order](feature_14_ship_customer_order.md), [Deliver Customer Order](feature_15_deliver_customer_order.md), [Route](feature_10_route_maintenence.md)
 
 ---
 

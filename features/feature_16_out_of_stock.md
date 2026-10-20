@@ -5,8 +5,8 @@
 **Status:**            Draft  
 **Created:**           2026-19-10  
 **Input:**             Showing which items have been out of stock.
-**Depends on:**        [Items](feature_4_Items__maintinence.md), [Inventory](feature_5_Inventory__maintinence.md)
-**Related:**           [Supplier Order](feature_8_Supplier_order_Management.md), [Picking](feature_12_picking.md), [Customer Order](feature_9_Customer_Order_Management)
+**Depends on:**        [Items](feature_04_Items__maintinence.md), [Inventory](feature_05_Inventory__maintinence.md)
+**Related:**           [Supplier Order](feature_08_Supplier_order_Management.md), [Picking](feature_12_picking.md), [Customer Order](feature_09_Customer_Order_Management.md)
 ---
 
 ## User Stories

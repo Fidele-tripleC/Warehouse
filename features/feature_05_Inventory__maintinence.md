@@ -5,8 +5,8 @@
 **Status:**            Draft  
 **Created:**           2026-09-21  
 **Input:**             Tracking, inspecting, and maintaining the inventory.  
-**Depends on:**        [Warehouse](feature_2_Warehouse__maintinence.md), [Items](feature_4_Items__maintinence.md)  
-**Related:**           [Put Away](feature_11_put_away.md), [Picking](feature_12_picking.md), [Supplier Order](feature_8_Supplier_order_Management.md), [Customer Order](feature_9_Customer_Order_Management), [Receive Supplier Order](feature_13_receive_supplier_order.md), [Out of Stock](feature_16_out_of_stock.md)
+**Depends on:**        [Warehouse](feature_02_Warehouse__maintinence.md), [Items](feature_04_Items__maintinence.md)  
+**Related:**           [Put Away](feature_11_put_away.md), [Picking](feature_12_picking.md), [Supplier Order](feature_08_Supplier_order_Management.md), [Customer Order](feature_09_Customer_Order_Management.md), [Receive Supplier Order](feature_13_receive_supplier_order.md), [Out of Stock](feature_16_out_of_stock.md)
 
 ---
 

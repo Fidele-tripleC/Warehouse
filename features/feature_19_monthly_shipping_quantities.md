@@ -5,8 +5,8 @@
 **Status:**            Draft  
 **Created:**           2026-19-10  
 **Input:**             Showing how many quantities of items have been shipping each month.
-**Depends on:**        [Ship Customer Order](feature_14_ship_customer_order.md), [Items](feature_4_Items__maintinence.md)
-**Related:**           [Customer Order](feature_9_Customer_Order_Management), [Inventory](feature_5_Inventory__maintinence.md)
+**Depends on:**        [Ship Customer Order](feature_14_ship_customer_order.md), [Items](feature_04_Items__maintinence.md)
+**Related:**           [Customer Order](feature_09_Customer_Order_Management.md), [Inventory](feature_05_Inventory__maintinence.md)
 ---
 
 ## User Stories

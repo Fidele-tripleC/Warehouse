@@ -5,8 +5,8 @@
 **Status:**            Draft  
 **Created:**           2026-09-21  
 **Input:**             Create, view, edit, and maintain customer information.  
-**Depends on:**        [Company](feature_1_Company_maintinence .md)  
-**Related:**           [Customer Order](feature_9_Customer_Order_Management), [Inventory](feature_5_Inventory__maintinence.md), [Warehouse](feature_2_Warehouse__maintinence.md), [Ship Customer Order](feature_14_ship_customer_order.md), [Route](feature_10_route_maintenence)
+**Depends on:**        [Company](feature_01_Company_maintinence.md)  
+**Related:**           [Customer Order](feature_09_Customer_Order_Management.md), [Inventory](feature_05_Inventory__maintinence.md), [Warehouse](feature_02_Warehouse__maintinence.md), [Ship Customer Order](feature_14_ship_customer_order.md), [Route](feature_10_route_maintenence.md)
 
 ---
 

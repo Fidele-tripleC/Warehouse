@@ -5,8 +5,8 @@
 **Status:**            Draft  
 **Created:**           2026-10-02  
 **Input:**             Plan, view, edit, start, track, and cancel delivery routes that carry fulfilled customer orders to customers.  
-**Depends on:**        [Customer Order](feature_9_Customer_Order_Management), [Customer](feature_7_Customer__maintinence__maintinence.md), [Deliver Customer Order](feature_15_deliver_customer_order.md)  
-**Related:**           [Warehouse](feature_2_Warehouse__maintinence.md), [Inventory](feature_5_Inventory__maintinence.md), [Picking](feature_12_picking.md), [Ship Customer Order](feature_14_ship_customer_order.md), [Delivery Does Not Match Ship](feature_18_delivery_does_not_match_ship.md)
+**Depends on:**        [Customer Order](feature_09_Customer_Order_Management.md), [Customer](feature_07_Customer__maintinence.md), [Deliver Customer Order](feature_15_deliver_customer_order.md)  
+**Related:**           [Warehouse](feature_02_Warehouse__maintinence.md), [Inventory](feature_05_Inventory__maintinence.md), [Picking](feature_12_picking.md), [Ship Customer Order](feature_14_ship_customer_order.md), [Delivery Does Not Match Ship](feature_18_delivery_does_not_match_ship.md)
 
 ---
 

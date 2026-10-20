@@ -5,8 +5,8 @@
 **Status:**            Draft  
 **Created:**           2026-09-21  
 **Input:**             Creating, Viewing, editing and maintaining warehouse locations  
-**Depends on:**        [Company](feature_1_Company_maintinence .md)  
-**Related:**           [Put Away](feature_11_put_away.md), [Picking](feature_12_picking.md), [Inventory](feature_5_Inventory__maintinence.md), [Items](feature_4_Items__maintinence.md)
+**Depends on:**        [Company](feature_01_Company_maintinence.md)  
+**Related:**           [Put Away](feature_11_put_away.md), [Picking](feature_12_picking.md), [Inventory](feature_05_Inventory__maintinence.md), [Items](feature_04_Items__maintinence.md)
 
 ---
 

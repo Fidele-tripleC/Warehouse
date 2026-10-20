@@ -5,8 +5,8 @@
 **Status:**            Draft  
 **Created:**           2026-19-10  
 **Input:**             Showing suppliers that did not ship what was ordered.
-**Depends on:**        [Supplier](feature_3_Supplier__maintinence.md), [Supplier Order](feature_8_Supplier_order_Management.md), [Receive Supplier Order](feature_13_receive_supplier_order.md)
-**Related:**           [Items](feature_4_Items__maintinence.md), [Inventory](feature_5_Inventory__maintinence.md)
+**Depends on:**        [Supplier](feature_03_Supplier__maintinence.md), [Supplier Order](feature_08_Supplier_order_Management.md), [Receive Supplier Order](feature_13_receive_supplier_order.md)
+**Related:**           [Items](feature_04_Items__maintinence.md), [Inventory](feature_05_Inventory__maintinence.md)
 ---
 
 ## User Stories

@@ -5,8 +5,8 @@
 **Status:**            Draft  
 **Created:**           2026-19-10  
 **Input:**             Putting received items into a warehouse location and updating inventory.
-**Depends on:**        [Warehouse](feature_2_Warehouse__maintinence.md), [Items](feature_4_Items__maintinence.md), [Inventory](feature_5_Inventory__maintinence.md), [Supplier Order](feature_8_Supplier_order_Management.md), [Receive Supplier Order](feature_13_receive_supplier_order.md)
-**Related:**           [Customer Order](feature_9_Customer_Order_Management), [Picking](feature_12_picking.md)
+**Depends on:**        [Warehouse](feature_02_Warehouse__maintinence.md), [Items](feature_04_Items__maintinence.md), [Inventory](feature_05_Inventory__maintinence.md), [Supplier Order](feature_08_Supplier_order_Management.md), [Receive Supplier Order](feature_13_receive_supplier_order.md)
+**Related:**           [Customer Order](feature_09_Customer_Order_Management.md), [Picking](feature_12_picking.md)
 ---
 
 ## User Stories

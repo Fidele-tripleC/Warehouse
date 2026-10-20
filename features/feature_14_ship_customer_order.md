@@ -5,8 +5,8 @@
 **Status:**            Draft  
 **Created:**           2026-19-10  
 **Input:**             Shipping customer orders after the items are picked. Verify, package, and bill of lading.
-**Depends on:**        [Customer Order](feature_9_Customer_Order_Management), [Picking](feature_12_picking.md), [Customer](feature_7_Customer__maintinence__maintinence.md)
-**Related:**           [Deliver Customer Order](feature_15_deliver_customer_order.md), [Route](feature_10_route_maintenence), [Inventory](feature_5_Inventory__maintinence.md), [Warehouse](feature_2_Warehouse__maintinence.md)
+**Depends on:**        [Customer Order](feature_09_Customer_Order_Management.md), [Picking](feature_12_picking.md), [Customer](feature_07_Customer__maintinence.md)
+**Related:**           [Deliver Customer Order](feature_15_deliver_customer_order.md), [Route](feature_10_route_maintenence.md), [Inventory](feature_05_Inventory__maintinence.md), [Warehouse](feature_02_Warehouse__maintinence.md)
 ---
 
 ## User Stories
