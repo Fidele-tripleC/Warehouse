@@ -11,4 +11,4 @@ Project documentation outside feature specs and Cursor rules.
 | `ui/` | Optional design exports (`docs/ui/feature-N/`) |
 | [arch_diagrams/](./arch_diagrams/README.md) | C4 (draw.io export: `warehouse-c4-context.png`) |
 
-Product requirements live in `features/`. Living API/schema/rules snapshots live in `features/reference/`.
+Product requirements and screens live in `features/` (images in `docs/ui/`). C4 is in `arch_diagrams/`.
