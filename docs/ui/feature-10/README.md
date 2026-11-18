@@ -1,6 +1,6 @@
 # Feature N10 Route — UI
 
-Linked from [feature_10_route_maintenence.md](../../../features/feature_10_route_maintenence.md).
+Linked from [feature_10_route_maintenence.md](../../features/feature_10_route_maintenence.md).
 
 Retailers do not log in. Stops are Fulfilled store orders.
 

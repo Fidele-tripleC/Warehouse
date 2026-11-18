@@ -1,6 +1,6 @@
 # Feature N06 Employee — UI
 
-Linked from [feature_06_Employee__maintinence.md](../../../features/feature_06_Employee__maintinence.md).
+Linked from [feature_06_Employee__maintinence.md](../../features/feature_06_Employee__maintinence.md).
 
 | File | Screen |
 |------|--------|

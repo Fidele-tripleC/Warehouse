@@ -1,6 +1,6 @@
 # Feature N07 Customer — UI
 
-Linked from [feature_07_Customer__maintinence.md](../../../features/feature_07_Customer__maintinence.md).
+Linked from [feature_07_Customer__maintinence.md](../../features/feature_07_Customer__maintinence.md).
 
 | File | Screen |
 |------|--------|

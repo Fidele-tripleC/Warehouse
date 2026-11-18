@@ -1,6 +1,6 @@
 # Feature N09 Customer Order — UI
 
-Linked from [feature_09_Customer_Order_Management.md](../../../features/feature_09_Customer_Order_Management.md).
+Linked from [feature_09_Customer_Order_Management.md](../../features/feature_09_Customer_Order_Management.md).
 
 Retailers do not log in. The warehouse records the store order.
 

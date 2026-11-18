@@ -1,6 +1,6 @@
 # Feature N03 Supplier — UI
 
-Linked from [feature_03_Supplier__maintinence.md](../../../features/feature_03_Supplier__maintinence.md).
+Linked from [feature_03_Supplier__maintinence.md](../../features/feature_03_Supplier__maintinence.md).
 
 | File | Screen |
 |------|--------|

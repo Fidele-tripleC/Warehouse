@@ -1,6 +1,6 @@
 # Feature N08 Supplier Order — UI
 
-Linked from [feature_08_Supplier_order_Management.md](../../../features/feature_08_Supplier_order_Management.md).
+Linked from [feature_08_Supplier_order_Management.md](../../features/feature_08_Supplier_order_Management.md).
 
 | File | Screen |
 |------|--------|

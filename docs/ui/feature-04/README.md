@@ -1,6 +1,6 @@
 # Feature N04 Items — UI
 
-Linked from [feature_04_Items__maintinence.md](../../../features/feature_04_Items__maintinence.md).
+Linked from [feature_04_Items__maintinence.md](../../features/feature_04_Items__maintinence.md).
 
 | File | Screen |
 |------|--------|

@@ -1,6 +1,6 @@
 # Feature N11 Receiving — UI
 
-Linked from [feature_11_receiving.md](../../../features/feature_11_receiving.md).
+Linked from [feature_11_receiving.md](../../features/feature_11_receiving.md).
 
 | File | Screen |
 |------|--------|

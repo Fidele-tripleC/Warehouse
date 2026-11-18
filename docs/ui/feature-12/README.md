@@ -1,6 +1,6 @@
 # Feature N12 Put Away — UI
 
-Linked from [feature_12_put_away.md](../../../features/feature_12_put_away.md).
+Linked from [feature_12_put_away.md](../../features/feature_12_put_away.md).
 
 | File | Screen |
 |------|--------|

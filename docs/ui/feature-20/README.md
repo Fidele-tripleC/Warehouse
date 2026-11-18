@@ -1,8 +1,6 @@
 # Feature N20 Authentication — UI
 
-Figma screens for login, forgot password, after login, and add user.
-
-Linked from [feature_20_authentication.md](../../../features/feature_20_authentication.md).
+Linked from [feature_20_authentication.md](../../features/feature_20_authentication.md).
 
 | File | Screen |
 |------|--------|

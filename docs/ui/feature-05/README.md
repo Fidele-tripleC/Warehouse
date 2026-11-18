@@ -1,6 +1,6 @@
 # Feature N05 Inventory — UI
 
-Linked from [feature_05_Inventory__maintinence.md](../../../features/feature_05_Inventory__maintinence.md).
+Linked from [feature_05_Inventory__maintinence.md](../../features/feature_05_Inventory__maintinence.md).
 
 Example names use **Fidele** (Fidele stock, Fidele Dock).
 

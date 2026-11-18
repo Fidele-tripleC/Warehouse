@@ -1,15 +1,6 @@
-node_modules/
-Soccer League/
+.DS_Store
+*.log
 .env
 .env.test
 .env.agility
-dist/
-frontend/dist/
-backend/deploy/
-backend/logs/
-*.log
-.DS_Store
-docs/todo-speckit-specs.md
-docs/todo-speckit-specs.pdf
-docs/todo-speckit-features.md
-docs/todo-speckit-features.pdf
+node_modules/

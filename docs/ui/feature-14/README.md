@@ -1,6 +1,6 @@
 # Feature N14 Ship — UI
 
-Linked from [feature_14_ship_customer_order.md](../../../features/feature_14_ship_customer_order.md).
+Linked from [feature_14_ship_customer_order.md](../../features/feature_14_ship_customer_order.md).
 
 Retailers do not log in. Ship is after pick.
 

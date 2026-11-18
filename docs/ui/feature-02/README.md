@@ -1,6 +1,6 @@
 # Feature N02 Warehouse — UI
 
-Figma screens for Warehouse. Linked from [feature_02_Warehouse__maintinence.md](../../../features/feature_02_Warehouse__maintinence.md).
+Linked from [feature_02_Warehouse__maintinence.md](../../features/feature_02_Warehouse__maintinence.md).
 
 | File | Screen |
 |------|--------|

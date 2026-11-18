@@ -1,0 +1,245 @@
+﻿# Feature: Employee
+
+**Feature ID:**        N06  
+**Branch pattern:**    `feature/6-employee`  
+**Status:**            Draft  
+**Created:**           2026-09-21  
+**Input:**             Creating, viewing, editing, and maintaining employee records  
+**Build order:**        4 of 20  
+**Depends on:**        [Authentication](feature_20_authentication.md), [Company](feature_01_Company_maintinence.md)  
+**Related:**           [Supplier](feature_03_Supplier__maintinence.md) (next)
+
+---
+
+## User Stories
+
+### US-N06.1: View Employees
+**As a**        Employee Manager  
+**I want to**   View all employees  
+**So that**     I can see employee information maintained by the company  
+**Priority:**               P1  
+**Independent test:** Select View Employees and verify that the System displays all employees and their information  
+**Acceptance scenarios:**   See AC-N06.1
+
+### US-N06.2: Add Employee
+**As a**       Employee Manager  
+**I want to**  add an employee  
+**So that**    employee information can be maintained by the company  
+**Priority:**               P1  
+**Independent test:** Enter valid employee information and save it. Verify that the new employee appears in the employee list  
+**Acceptance scenarios:**   See AC-N06.2
+
+### US-N06.3: Edit Employee
+**As a**       Employee information  
+**I want to**  edit employee information  
+**So that**    employee records remain accurate  
+**Priority:**               P1  
+**Independent test:**  Modify employee information and verify that the update information is displayed  
+**Acceptance scenarios:**   See AC-N06.3
+
+### US-N06.4: delete Employee
+**As a**       Employee Manager  
+**I want to**  delete an employee  
+**So that**    the employee who no longer works for the company get deleted  
+**Priority:**               P1  
+**Independent test:** create an employee and delete him, see if he disappears from the list  
+**Acceptance scenarios:**   See AC-N06.4
+
+---
+
+## Functional Requirements
+
+- **FR-001**: System Must assign every employee a unique identifier
+- **FR-002**: System Must allow an authorized Employee Manager to view employee information.
+- **FR-003**: System Must allow an authorized Employee Manager to add an employee
+- **FR-004**: System Must allow an authorized employee Manager to edit employee information
+- **FR-005**: System Must allow an authorized Employee Manager to delete an employee
+- **FR-006**: System associate each employee with a company
+- **FR-007**: System Must prevent unauthorized users from modifying employee information
+
+---
+
+## Key Entities
+
+- **Employee**:     Represent a person employed by the company
+- **Company**:      Represents the company employing the employee
+
+**Relationships**
+- one **Company** can have multiple **Employees**
+
+---
+
+## Data Model Requirements
+
+### `Employee` table
+
+ `first_name`   : this is the name of the employee  
+ `last_name`    : this is the last name  
+ `email`        : this is working personal email  
+ `phone_number` : this is the personal phone number  
+ `position`     : this is the position one have in the company
+
+---
+
+## Acceptance Criteria
+
+### AC-N06.1 â€” View Employees
+
+#### Scenario: View Existing Employees
+*   **Given** Employee exist in the system
+*   **When**  the Employee Manager selects view Employees
+*   **Then**  The system displays employees
+*   **And**   displays their current information.
+
+#### Scenario: No employees
+*   **Given**  No employees exist in the system
+*   **When**   The employee Manager selects View employees
+*   **Then**   the employee list is empty
+*   **And**    The system displays "No employees are available"
+
+### AC-N06.2 â€” Add Employee
+
+#### Scenario: Add Employee
+*   **Given** The employee Manager is authorized
+*   **When**  the manager enters valid employee information
+*   **Then**  the system saves the employee
+*   **And**   associates the employee with the company
+*   **And**   the new employee appears in the employee list
+
+### AC-N06.3 â€” edit Employee
+
+#### Scenario: Edit Employee
+*   **Given** the Manager wants to edit an employee
+*   **When**  the updates are entered
+*   **Then**  the information for the employee changes
+*   **And**   the system displays the updated employee information
+
+### AC-N06.4 â€” delete an employee
+
+#### Scenario: delete an employee
+*   **Given**  an employee no longer works for the company
+*   **When**   the manager deletes him
+*   **Then**   then he disappears from the list of the employees
+*   **And**    the system displays "Employee deleted"
+
+#### Scenario: Unauthorized update
+*   **Given** the user is not authorized to modify employee information
+*   **When**  the user attempts to add, edit, or delete an employee
+*   **Then**  the employee is not changed
+*   **And**   the system displays "You are not authorized to manage employees"
+
+---
+
+## Assumptions
+
+- The user is logged in as Employee Manager.
+- An employee belongs to a company.
+
+---
+
+## Edge Cases
+
+- User is not authorized
+- List is empty
+- Employee no longer works at the company
+
+---
+
+## Success Criteria
+
+- **SC-001**: Employee Manager can add, view, edit, and delete an employee.
+- **SC-002**: Unauthorized user sees "You are not authorized to manage employees".
+
+---
+
+## Data Ownership & Isolation
+
+Employee records belong to the company. Only a logged in Employee Manager can change them.
+
+| Rule | Requirement |
+|------|-------------|
+| **Read scope** | Employee Manager can view employees |
+| **Write scope** | Employee Manager can add, edit, delete |
+| **Create scope** | New employee is created by the signed-in Employee Manager |
+| **Cross-user access** | Missing employee → `404`. Forbidden → "You are not authorized to manage employees" |
+| **UI scope** | Employee menu after login |
+| **Implementation** | Auth on `/api/employees` |
+
+---
+
+## API Requirements
+
+Base path: `/api`. Errors: `{ "message": "..." }`. Auth: `Authorization: Bearer <token>`.
+
+| Method | Endpoint | Auth | Purpose |
+|--------|----------|------|---------|
+| `GET` | `/api/employees` | Yes | List employees |
+| `GET` | `/api/employees/:id` | Yes | View one employee |
+| `POST` | `/api/employees` | Yes | Add an employee |
+| `PUT` | `/api/employees/:id` | Yes | Edit an employee |
+| `DELETE` | `/api/employees/:id` | Yes | Delete an employee |
+
+**Create body:** `{ "name": "Alex Rivera", "company_id": 1, "email": "alex@warehouse.example" }`  
+**Delete success:** `{ "message": "Employee deleted" }`  
+**Unauthorized:** `401` `{ "message": "You are not authorized to manage employees" }`
+
+---
+
+## Screen Requirements
+
+Menu after login: **Employee**. Employee Manager. No Company menu on this role.
+
+Pictures: [`docs/ui/feature-06/`](../ui/feature-06/)
+
+### Employee list
+- Heading: Employee
+- Button: **Add Employee**
+- List: name, company, email
+- On a row: View, Edit, Delete
+
+![Employee list](../ui/feature-06/employee-list.png)
+
+Empty: "No employees are available"
+
+![Empty employee list](../ui/feature-06/employee-list-empty.png)
+
+After delete: "Employee deleted"
+
+![Employee deleted](../ui/feature-06/employee-deleted.png)
+
+Not allowed: "You are not authorized to manage employees"
+
+![Not authorized](../ui/feature-06/employee-not-authorized.png)
+
+### Add Employee
+- Fields: name, company, email
+- Buttons: **Save**, **Cancel**
+
+![Add Employee](../ui/feature-06/employee-add.png)
+
+### Employee details
+- Shows employee information
+- Buttons: **Edit**, **Delete**
+
+![Employee details](../ui/feature-06/employee-details.png)
+
+### Edit Employee
+- Same fields as Add
+- Buttons: **Save**, **Cancel**
+
+![Edit Employee](../ui/feature-06/employee-edit.png)
+
+---
+
+## Definition of Done
+
+- [ ] Add, view, edit, and delete match the Gherkin
+- [ ] Unauthorized user cannot change an employee
+
+---
+
+## Out of Scope
+
+- A retailer employee logging into this warehouse app
+- Coding the app (that is later)
+

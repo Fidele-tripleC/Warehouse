@@ -1,6 +1,6 @@
 # Feature N01 Company — UI
 
-Figma screens for Company. Linked from [feature_01_Company_maintinence.md](../../../features/feature_01_Company_maintinence.md).
+Linked from [feature_01_Company_maintinence.md](../../features/feature_01_Company_maintinence.md).
 
 | File | Screen |
 |------|--------|
@@ -14,5 +14,3 @@ Figma screens for Company. Linked from [feature_01_Company_maintinence.md](../..
 | `company-details.png` | Company details |
 | `company-assign-warehouse.png` | Assign Warehouse |
 | `company-edit.png` | Edit Company |
-
-Older `sample-*.jpg` files are leftover samples. Use the `company-*.png` files above.

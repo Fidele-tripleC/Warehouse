@@ -1,6 +1,6 @@
 # Feature N13 Picking — UI
 
-Linked from [feature_13_picking.md](../../../features/feature_13_picking.md).
+Linked from [feature_13_picking.md](../../features/feature_13_picking.md).
 
 Picking is for a recorded store order. Retailers do not log in.
 

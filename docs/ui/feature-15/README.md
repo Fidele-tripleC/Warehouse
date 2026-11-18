@@ -1,6 +1,6 @@
 # Feature N15 Deliver — UI
 
-Linked from [feature_15_deliver_customer_order.md](../../../features/feature_15_deliver_customer_order.md).
+Linked from [feature_15_deliver_customer_order.md](../../features/feature_15_deliver_customer_order.md).
 
 Retailers do not log in. Deliver confirms a shipped store order.
 
