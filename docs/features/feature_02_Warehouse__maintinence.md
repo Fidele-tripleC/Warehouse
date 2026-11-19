@@ -195,7 +195,7 @@ Base path: `/api`. Errors: `{ "message": "..." }`. Auth: `Authorization: Bearer 
 
 Menu after login: **Warehouse**. Warehouse Manager. No Company menu on this role.
 
-Pictures: [`docs/ui/feature-02/`](../ui/feature-02/)
+Pictures: [`docs/ui/02-warehouse/`](../ui/02-warehouse/)
 
 ### Warehouse list
 - Heading: Warehouse
@@ -203,41 +203,41 @@ Pictures: [`docs/ui/feature-02/`](../ui/feature-02/)
 - List: code, name, company
 - On a row: View, Edit, Delete
 
-![Warehouse list](../ui/feature-02/warehouse-list.png)
+![Warehouse list](../ui/02-warehouse/warehouse-list.png)
 
 Empty: "No warehouses are available"
 
-![Empty warehouse list](../ui/feature-02/warehouse-list-empty.png)
+![Empty warehouse list](../ui/02-warehouse/warehouse-list-empty.png)
 
 After delete: "Warehouse deleted"
 
-![Warehouse deleted](../ui/feature-02/warehouse-deleted.png)
+![Warehouse deleted](../ui/02-warehouse/warehouse-deleted.png)
 
 Not allowed: "You are not authorized to manage warehouses"
 
-![Not authorized](../ui/feature-02/warehouse-not-authorized.png)
+![Not authorized](../ui/02-warehouse/warehouse-not-authorized.png)
 
 ### Add Warehouse
 - Fields: code, name, company
 - Buttons: **Save**, **Cancel**
 
-![Add Warehouse](../ui/feature-02/warehouse-add.png)
+![Add Warehouse](../ui/02-warehouse/warehouse-add.png)
 
 Duplicate code: "Duplicate warehouse code"
 
-![Duplicate warehouse code](../ui/feature-02/warehouse-add-duplicate.png)
+![Duplicate warehouse code](../ui/02-warehouse/warehouse-add-duplicate.png)
 
 ### Warehouse details
 - Shows warehouse information
 - Buttons: **Edit**, **Delete**
 
-![Warehouse details](../ui/feature-02/warehouse-details.png)
+![Warehouse details](../ui/02-warehouse/warehouse-details.png)
 
 ### Edit Warehouse
 - Same fields as Add
 - Buttons: **Save**, **Cancel**
 
-![Edit Warehouse](../ui/feature-02/warehouse-edit.png)
+![Edit Warehouse](../ui/02-warehouse/warehouse-edit.png)
 
 ---
 

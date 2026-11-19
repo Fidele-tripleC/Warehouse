@@ -216,37 +216,37 @@ Base path: `/api`. Errors: `{ "message": "..." }`. Auth: `Authorization: Bearer 
 
 Menu after login: **Receive**. Warehouse Manager. Supplier goods, not a store order.
 
-Pictures: [`docs/ui/feature-11/`](../ui/feature-11/)
+Pictures: [`docs/ui/11-receiving/`](../ui/11-receiving/)
 
 ### Receive list
 - Heading: Receive
 - Button: **Add Receive**
 - List: supplier order, item, ordered quantity, received quantity
 
-![Receive list](../ui/feature-11/receive-list.png)
+![Receive list](../ui/11-receiving/receive-list.png)
 
 Empty: "No receives are available"
 
-![Empty receive list](../ui/feature-11/receive-list-empty.png)
+![Empty receive list](../ui/11-receiving/receive-list-empty.png)
 
 Not allowed: "You are not authorized to manage receive"
 
-![Not authorized](../ui/feature-11/receive-not-authorized.png)
+![Not authorized](../ui/11-receiving/receive-not-authorized.png)
 
 ### Add Receive
 - Fields: supplier order, item, quantity
 - Buttons: **Save**, **Cancel**
 
-![Add Receive](../ui/feature-11/receive-add.png)
+![Add Receive](../ui/11-receiving/receive-add.png)
 
 Quantity zero or less: "Quantity must be greater than zero"
 
-![Quantity must be greater than zero](../ui/feature-11/receive-add-bad-quantity.png)
+![Quantity must be greater than zero](../ui/11-receiving/receive-add-bad-quantity.png)
 
 ### Receive details
 - Shows supplier order, item, ordered quantity, received quantity
 
-![Receive details](../ui/feature-11/receive-details.png)
+![Receive details](../ui/11-receiving/receive-details.png)
 
 ---
 

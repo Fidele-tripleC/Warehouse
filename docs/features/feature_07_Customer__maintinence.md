@@ -212,7 +212,7 @@ Base path: `/api`. Errors: `{ "message": "..." }`. Auth: `Authorization: Bearer 
 
 Menu after login: **Customer**. Warehouse Manager. No Company menu on this role. Retailer does not log in.
 
-Pictures: [`docs/ui/feature-07/`](../ui/feature-07/)
+Pictures: [`docs/ui/07-customer/`](../ui/07-customer/)
 
 ### Customer list
 - Heading: Customer
@@ -221,45 +221,45 @@ Pictures: [`docs/ui/feature-07/`](../ui/feature-07/)
 - List: code, name, email
 - On a row: View, Edit, Archive
 
-![Customer list](../ui/feature-07/customer-list.png)
+![Customer list](../ui/07-customer/customer-list.png)
 
 Empty: "No customers are available"
 
-![Empty customer list](../ui/feature-07/customer-list-empty.png)
+![Empty customer list](../ui/07-customer/customer-list-empty.png)
 
 After archive: "Customer archived"
 
-![Customer archived](../ui/feature-07/customer-archived.png)
+![Customer archived](../ui/07-customer/customer-archived.png)
 
 Not allowed: "You are not authorized to manage customers"
 
-![Not authorized](../ui/feature-07/customer-not-authorized.png)
+![Not authorized](../ui/07-customer/customer-not-authorized.png)
 
 ### Add Customer
 - Fields: code, name, email
 - Buttons: **Save**, **Cancel**
 
-![Add Customer](../ui/feature-07/customer-add.png)
+![Add Customer](../ui/07-customer/customer-add.png)
 
 Duplicate code: "Duplicate customer code"
 
-![Duplicate customer code](../ui/feature-07/customer-add-duplicate.png)
+![Duplicate customer code](../ui/07-customer/customer-add-duplicate.png)
 
 Empty name or bad email: "Invalid customer data"
 
-![Invalid customer data](../ui/feature-07/customer-add-invalid.png)
+![Invalid customer data](../ui/07-customer/customer-add-invalid.png)
 
 ### Customer details
 - Shows retailer information
 - Buttons: **Edit**, **Archive**
 
-![Customer details](../ui/feature-07/customer-details.png)
+![Customer details](../ui/07-customer/customer-details.png)
 
 ### Edit Customer
 - Same fields as Add
 - Buttons: **Save**, **Cancel**
 
-![Edit Customer](../ui/feature-07/customer-edit.png)
+![Edit Customer](../ui/07-customer/customer-edit.png)
 
 ---
 

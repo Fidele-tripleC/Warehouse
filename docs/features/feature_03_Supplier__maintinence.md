@@ -209,7 +209,7 @@ Base path: `/api`. Errors: `{ "message": "..." }`. Auth: `Authorization: Bearer 
 
 Menu after login: **Supplier**. Warehouse Manager. No Company menu on this role.
 
-Pictures: [`docs/ui/feature-03/`](../ui/feature-03/)
+Pictures: [`docs/ui/03-supplier/`](../ui/03-supplier/)
 
 ### Supplier list
 - Heading: Supplier
@@ -217,41 +217,41 @@ Pictures: [`docs/ui/feature-03/`](../ui/feature-03/)
 - List: code, name, email, phone
 - On a row: View, Edit, Archive
 
-![Supplier list](../ui/feature-03/supplier-list.png)
+![Supplier list](../ui/03-supplier/supplier-list.png)
 
 Empty: "No suppliers are available"
 
-![Empty supplier list](../ui/feature-03/supplier-list-empty.png)
+![Empty supplier list](../ui/03-supplier/supplier-list-empty.png)
 
 After archive: "Supplier deleted"
 
-![Supplier archived](../ui/feature-03/supplier-archived.png)
+![Supplier archived](../ui/03-supplier/supplier-archived.png)
 
 Not allowed: "You are not authorized to manage suppliers"
 
-![Not authorized](../ui/feature-03/supplier-not-authorized.png)
+![Not authorized](../ui/03-supplier/supplier-not-authorized.png)
 
 ### Add Supplier
 - Fields: code, name, email, phone, lead time
 - Buttons: **Save**, **Cancel**
 
-![Add Supplier](../ui/feature-03/supplier-add.png)
+![Add Supplier](../ui/03-supplier/supplier-add.png)
 
 Duplicate code: "Duplicate supplier code"
 
-![Duplicate supplier code](../ui/feature-03/supplier-add-duplicate.png)
+![Duplicate supplier code](../ui/03-supplier/supplier-add-duplicate.png)
 
 ### Supplier details
 - Shows contact information and delivery history
 - Buttons: **Edit**, **Archive**
 
-![Supplier details](../ui/feature-03/supplier-details.png)
+![Supplier details](../ui/03-supplier/supplier-details.png)
 
 ### Edit Supplier
 - Same fields as Add
 - Buttons: **Save**, **Cancel**
 
-![Edit Supplier](../ui/feature-03/supplier-edit.png)
+![Edit Supplier](../ui/03-supplier/supplier-edit.png)
 
 ---
 

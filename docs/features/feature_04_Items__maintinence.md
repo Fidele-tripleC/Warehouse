@@ -189,7 +189,7 @@ Base path: `/api`. Errors: `{ "message": "..." }`. Auth: `Authorization: Bearer 
 
 Menu after login: **Items**. Warehouse Manager. No Company menu on this role.
 
-Pictures: [`docs/ui/feature-04/`](../ui/feature-04/)
+Pictures: [`docs/ui/04-items/`](../ui/04-items/)
 
 ### Item list
 - Heading: Items
@@ -198,41 +198,41 @@ Pictures: [`docs/ui/feature-04/`](../ui/feature-04/)
 - Warning when quantity is below minimum
 - On a row: View, Edit, Delete
 
-![Item list](../ui/feature-04/item-list.png)
+![Item list](../ui/04-items/item-list.png)
 
 Empty: "No items are available"
 
-![Empty item list](../ui/feature-04/item-list-empty.png)
+![Empty item list](../ui/04-items/item-list-empty.png)
 
 After delete: "Item deleted"
 
-![Item deleted](../ui/feature-04/item-deleted.png)
+![Item deleted](../ui/04-items/item-deleted.png)
 
 Not allowed: "You are not authorized to update inventory"
 
-![Not authorized](../ui/feature-04/item-not-authorized.png)
+![Not authorized](../ui/04-items/item-not-authorized.png)
 
 ### Add Item
 - Fields: SKU, name, quantity, min quantity
 - Buttons: **Save**, **Cancel**
 
-![Add Item](../ui/feature-04/item-add.png)
+![Add Item](../ui/04-items/item-add.png)
 
 ### Item details
 - Shows item information and quantity
 - Buttons: **Edit**, **Delete**
 
-![Item details](../ui/feature-04/item-details.png)
+![Item details](../ui/04-items/item-details.png)
 
 Below minimum: "Item below minimum quantity"
 
-![Item below minimum](../ui/feature-04/item-below-minimum.png)
+![Item below minimum](../ui/04-items/item-below-minimum.png)
 
 ### Edit Item
 - Same fields as Add
 - Buttons: **Save**, **Cancel**
 
-![Edit Item](../ui/feature-04/item-edit.png)
+![Edit Item](../ui/04-items/item-edit.png)
 
 ---
 

@@ -299,7 +299,7 @@ Base path: `/api`. Errors: `{ "message": "..." }`. Auth: `Authorization: Bearer 
 
 Menu after login: **Customer Order**. Warehouse Manager. Retailer does not log in. Warehouse records the store order.
 
-Pictures: [`docs/ui/feature-09/`](../ui/feature-09/)
+Pictures: [`docs/ui/09-customer-order/`](../ui/09-customer-order/)
 
 ### Customer order list
 - Heading: Customer Order
@@ -307,53 +307,53 @@ Pictures: [`docs/ui/feature-09/`](../ui/feature-09/)
 - List: retailer, status, date
 - On a row: View, Edit, Submit, Fulfill, Cancel
 
-![Customer Order list](../ui/feature-09/customer-order-list.png)
+![Customer Order list](../ui/09-customer-order/customer-order-list.png)
 
 Empty: "No customer orders are available"
 
-![Empty customer order list](../ui/feature-09/customer-order-list-empty.png)
+![Empty customer order list](../ui/09-customer-order/customer-order-list-empty.png)
 
 Not allowed: "You are not authorized to manage customer orders"
 
-![Not authorized](../ui/feature-09/customer-order-not-authorized.png)
+![Not authorized](../ui/09-customer-order/customer-order-not-authorized.png)
 
 ### Record Order
 - Fields: retailer, items, quantities
 - Buttons: **Save**, **Cancel**
 
-![Record Order](../ui/feature-09/customer-order-record.png)
+![Record Order](../ui/09-customer-order/customer-order-record.png)
 
 Quantity zero or less: "Quantity must be greater than zero"
 
-![Quantity must be greater than zero](../ui/feature-09/customer-order-record-bad-quantity.png)
+![Quantity must be greater than zero](../ui/09-customer-order/customer-order-record-bad-quantity.png)
 
 ### Customer order details
 - Shows items and status
 - Buttons: **Edit**, **Submit**, **Fulfill**, **Cancel**
 
-![Customer Order details](../ui/feature-09/customer-order-details.png)
+![Customer Order details](../ui/09-customer-order/customer-order-details.png)
 
 Empty order: "Order has no items"
 
-![Order has no items](../ui/feature-09/customer-order-no-items.png)
+![Order has no items](../ui/09-customer-order/customer-order-no-items.png)
 
 Not enough stock: "Insufficient stock"
 
-![Insufficient stock](../ui/feature-09/customer-order-insufficient-stock.png)
+![Insufficient stock](../ui/09-customer-order/customer-order-insufficient-stock.png)
 
 Not Draft: "Only a Draft customer order can be edited"
 
-![Only a Draft customer order can be edited](../ui/feature-09/customer-order-not-draft.png)
+![Only a Draft customer order can be edited](../ui/09-customer-order/customer-order-not-draft.png)
 
 Cancel Fulfilled: "A Fulfilled customer order cannot be cancelled"
 
-![A Fulfilled customer order cannot be cancelled](../ui/feature-09/customer-order-fulfilled-cancel.png)
+![A Fulfilled customer order cannot be cancelled](../ui/09-customer-order/customer-order-fulfilled-cancel.png)
 
 ### Edit Customer Order
 - Same fields as Record (Draft only)
 - Button: **Save**
 
-![Edit Customer Order](../ui/feature-09/customer-order-edit.png)
+![Edit Customer Order](../ui/09-customer-order/customer-order-edit.png)
 
 ---
 

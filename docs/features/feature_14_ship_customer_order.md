@@ -216,45 +216,45 @@ Base path: `/api`. Errors: `{ "message": "..." }`. Auth: `Authorization: Bearer 
 
 Menu after login: **Ship**. Warehouse Manager. After pick: the store order leaves the warehouse. Retailer does not log in.
 
-Pictures: [`docs/ui/feature-14/`](../ui/feature-14/)
+Pictures: [`docs/ui/14-ship/`](../ui/14-ship/)
 
 ### Ship list
 - Heading: Ship
 - Button: **Add Ship**
 - List: customer order, item, quantity, bill of lading
 
-![Ship list](../ui/feature-14/ship-list.png)
+![Ship list](../ui/14-ship/ship-list.png)
 
 Empty: "No ships are available"
 
-![Empty ship list](../ui/feature-14/ship-list-empty.png)
+![Empty ship list](../ui/14-ship/ship-list-empty.png)
 
 Not allowed: "You are not authorized to manage ship"
 
-![Not authorized](../ui/feature-14/ship-not-authorized.png)
+![Not authorized](../ui/14-ship/ship-not-authorized.png)
 
 ### Add Ship
 - Fields: customer order, item, quantity, bill of lading
 - Buttons: **Save**, **Cancel**
 
-![Add Ship](../ui/feature-14/ship-add.png)
+![Add Ship](../ui/14-ship/ship-add.png)
 
 Not fully picked: "Order is not fully picked"
 
-![Order is not fully picked](../ui/feature-14/ship-add-not-fully-picked.png)
+![Order is not fully picked](../ui/14-ship/ship-add-not-fully-picked.png)
 
 Pick does not match: "Picked items do not match the order"
 
-![Picked items do not match the order](../ui/feature-14/ship-add-items-do-not-match.png)
+![Picked items do not match the order](../ui/14-ship/ship-add-items-do-not-match.png)
 
 Already shipped: "Order is already shipped"
 
-![Order is already shipped](../ui/feature-14/ship-add-already-shipped.png)
+![Order is already shipped](../ui/14-ship/ship-add-already-shipped.png)
 
 ### Ship details
 - Shows customer order, item, quantity, bill of lading
 
-![Ship details](../ui/feature-14/ship-details.png)
+![Ship details](../ui/14-ship/ship-details.png)
 
 ---
 

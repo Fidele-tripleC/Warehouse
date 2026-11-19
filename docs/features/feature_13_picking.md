@@ -218,45 +218,45 @@ Base path: `/api`. Errors: `{ "message": "..." }`. Auth: `Authorization: Bearer 
 
 Menu after login: **Picking**. Warehouse Manager. After a Submitted store order: take items off a shelf. Inventory goes down. Retailer does not log in.
 
-Pictures: [`docs/ui/feature-13/`](../ui/feature-13/)
+Pictures: [`docs/ui/13-picking/`](../ui/13-picking/)
 
 ### Pick list
 - Heading: Picking
 - Button: **Add Pick**
 - List: warehouse, item, quantity, location, customer order
 
-![Picking list](../ui/feature-13/pick-list.png)
+![Picking list](../ui/13-picking/pick-list.png)
 
 Empty: "No picks are available"
 
-![Empty pick list](../ui/feature-13/pick-list-empty.png)
+![Empty pick list](../ui/13-picking/pick-list-empty.png)
 
 Not allowed: "You are not authorized to manage picking"
 
-![Not authorized](../ui/feature-13/pick-not-authorized.png)
+![Not authorized](../ui/13-picking/pick-not-authorized.png)
 
 ### Add Pick
 - Fields: customer order, item, quantity, location
 - Buttons: **Save**, **Cancel**
 
-![Add Pick](../ui/feature-13/pick-add.png)
+![Add Pick](../ui/13-picking/pick-add.png)
 
 Quantity zero or less: "Quantity must be greater than zero"
 
-![Quantity must be greater than zero](../ui/feature-13/pick-add-bad-quantity.png)
+![Quantity must be greater than zero](../ui/13-picking/pick-add-bad-quantity.png)
 
 Quantity more than remaining: "Quantity is more than remaining"
 
-![Quantity is more than remaining](../ui/feature-13/pick-add-over-remaining.png)
+![Quantity is more than remaining](../ui/13-picking/pick-add-over-remaining.png)
 
 Not enough stock: "Inventory is not enough"
 
-![Inventory is not enough](../ui/feature-13/pick-add-not-enough.png)
+![Inventory is not enough](../ui/13-picking/pick-add-not-enough.png)
 
 ### Pick details
 - Shows warehouse, item, quantity, location, customer order
 
-![Pick details](../ui/feature-13/pick-details.png)
+![Pick details](../ui/13-picking/pick-details.png)
 
 ---
 

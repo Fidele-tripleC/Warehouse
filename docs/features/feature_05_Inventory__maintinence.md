@@ -196,7 +196,7 @@ Base path: `/api`. Errors: `{ "message": "..." }`. Auth: `Authorization: Bearer 
 
 Menu after login: **Inventory**. Warehouse Manager. No Company menu on this role.
 
-Pictures: [`docs/ui/feature-05/`](../ui/feature-05/)
+Pictures: [`docs/ui/05-inventory/`](../ui/05-inventory/)
 
 ### Inventory list
 - Heading: Inventory
@@ -205,37 +205,37 @@ Pictures: [`docs/ui/feature-05/`](../ui/feature-05/)
 - On a row: View, Edit, Delete
 - Warning: "Item below minimum quantity"
 
-![Inventory list](../ui/feature-05/inventory-list.png)
+![Inventory list](../ui/05-inventory/inventory-list.png)
 
 Empty: "No inventories are available"
 
-![Empty inventory list](../ui/feature-05/inventory-list-empty.png)
+![Empty inventory list](../ui/05-inventory/inventory-list-empty.png)
 
 After delete: "Inventory deleted"
 
-![Inventory deleted](../ui/feature-05/inventory-deleted.png)
+![Inventory deleted](../ui/05-inventory/inventory-deleted.png)
 
 Not allowed: "You are not authorized to update inventory"
 
-![Not authorized](../ui/feature-05/inventory-not-authorized.png)
+![Not authorized](../ui/05-inventory/inventory-not-authorized.png)
 
 ### Add Inventory
 - Fields: name, warehouse
 - Buttons: **Save**, **Cancel**
 
-![Add Inventory](../ui/feature-05/inventory-add.png)
+![Add Inventory](../ui/05-inventory/inventory-add.png)
 
 ### Inventory details
 - Shows items and quantities
 - Buttons: **Edit**, **Delete**
 
-![Inventory details](../ui/feature-05/inventory-details.png)
+![Inventory details](../ui/05-inventory/inventory-details.png)
 
 ### Edit Inventory
 - Same fields as Add
 - Buttons: **Save**, **Cancel**
 
-![Edit Inventory](../ui/feature-05/inventory-edit.png)
+![Edit Inventory](../ui/05-inventory/inventory-edit.png)
 
 ---
 

@@ -303,7 +303,7 @@ Base path: `/api`. Errors: `{ "message": "..." }`. Auth: `Authorization: Bearer 
 
 Menu after login: **Route**. Warehouse Manager. Stops are Fulfilled store orders. Retailer does not log in.
 
-Pictures: [`docs/ui/feature-10/`](../ui/feature-10/)
+Pictures: [`docs/ui/10-route/`](../ui/10-route/)
 
 ### Route list
 - Heading: Route
@@ -311,47 +311,47 @@ Pictures: [`docs/ui/feature-10/`](../ui/feature-10/)
 - List: name, status
 - On a row: View, Start, Cancel
 
-![Route list](../ui/feature-10/route-list.png)
+![Route list](../ui/10-route/route-list.png)
 
 Empty: "No routes are available"
 
-![Empty route list](../ui/feature-10/route-list-empty.png)
+![Empty route list](../ui/10-route/route-list-empty.png)
 
 Not allowed: "You are not authorized to manage routes"
 
-![Not authorized](../ui/feature-10/route-not-authorized.png)
+![Not authorized](../ui/10-route/route-not-authorized.png)
 
 ### Add Route
 - Fields: name, stops (customer orders)
 - Buttons: **Save**, **Cancel**
 
-![Add Route](../ui/feature-10/route-add.png)
+![Add Route](../ui/10-route/route-add.png)
 
 Past date: "Planned date cannot be in the past"
 
-![Planned date cannot be in the past](../ui/feature-10/route-add-past-date.png)
+![Planned date cannot be in the past](../ui/10-route/route-add-past-date.png)
 
 Order not Fulfilled: "Order is not fulfilled"
 
-![Order is not fulfilled](../ui/feature-10/route-add-not-fulfilled.png)
+![Order is not fulfilled](../ui/10-route/route-add-not-fulfilled.png)
 
 ### Route details
 - Shows stops and status
 - Buttons: **Start**, **Update Stop**, **Cancel Route**
 
-![Route details](../ui/feature-10/route-details.png)
+![Route details](../ui/10-route/route-details.png)
 
 No stops: "Route has no stops"
 
-![Route has no stops](../ui/feature-10/route-no-stops.png)
+![Route has no stops](../ui/10-route/route-no-stops.png)
 
 Not Planned: "Only a Planned route can be edited"
 
-![Only a Planned route can be edited](../ui/feature-10/route-not-planned.png)
+![Only a Planned route can be edited](../ui/10-route/route-not-planned.png)
 
 Cancel Completed: "A Completed route cannot be cancelled"
 
-![A Completed route cannot be cancelled](../ui/feature-10/route-completed-cancel.png)
+![A Completed route cannot be cancelled](../ui/10-route/route-completed-cancel.png)
 
 ---
 

@@ -231,7 +231,7 @@ Base path: `/api`. Errors: `{ "message": "..." }`. Auth: `Authorization: Bearer 
 
 Menu after login: **Supplier Order**. Warehouse Manager. No Company menu.
 
-Pictures: [`docs/ui/feature-08/`](../ui/feature-08/)
+Pictures: [`docs/ui/08-supplier-order/`](../ui/08-supplier-order/)
 
 ### Supplier order list
 - Heading: Supplier Order
@@ -239,41 +239,41 @@ Pictures: [`docs/ui/feature-08/`](../ui/feature-08/)
 - List: supplier, status, date
 - On a row: View, Edit, Submit
 
-![Supplier order list](../ui/feature-08/supplier-order-list.png)
+![Supplier order list](../ui/08-supplier-order/supplier-order-list.png)
 
 Empty: "No supplier orders are available"
 
-![Empty supplier order list](../ui/feature-08/supplier-order-list-empty.png)
+![Empty supplier order list](../ui/08-supplier-order/supplier-order-list-empty.png)
 
 Not allowed: "You are not authorized to manage supplier orders"
 
-![Not authorized](../ui/feature-08/supplier-order-not-authorized.png)
+![Not authorized](../ui/08-supplier-order/supplier-order-not-authorized.png)
 
 ### Add Supplier Order
 - Fields: supplier, items, quantities
 - Buttons: **Save**, **Cancel**
 
-![Add Supplier Order](../ui/feature-08/supplier-order-add.png)
+![Add Supplier Order](../ui/08-supplier-order/supplier-order-add.png)
 
 ### Supplier order details
 - Shows items and status
 - Buttons: **Edit**, **Submit**
 
-![Supplier order details](../ui/feature-08/supplier-order-details.png)
+![Supplier order details](../ui/08-supplier-order/supplier-order-details.png)
 
 Empty order: "Order has no items"
 
-![Order has no items](../ui/feature-08/supplier-order-no-items.png)
+![Order has no items](../ui/08-supplier-order/supplier-order-no-items.png)
 
 ### Edit Supplier Order
 - Same fields as Add (Draft only)
 - Buttons: **Save**, **Cancel**
 
-![Edit Supplier Order](../ui/feature-08/supplier-order-edit.png)
+![Edit Supplier Order](../ui/08-supplier-order/supplier-order-edit.png)
 
 Not Draft: "Only a Draft supplier order can be edited"
 
-![Only a Draft supplier order can be edited](../ui/feature-08/supplier-order-not-draft.png)
+![Only a Draft supplier order can be edited](../ui/08-supplier-order/supplier-order-not-draft.png)
 
 ---
 

@@ -228,41 +228,41 @@ Base path: `/api`. Errors: `{ "message": "..." }`. Auth: `Authorization: Bearer 
 
 Menu after login: **Put Away**. Warehouse Manager. After receive: supplier goods go onto a shelf. Inventory goes up.
 
-Pictures: [`docs/ui/feature-12/`](../ui/feature-12/)
+Pictures: [`docs/ui/12-put-away/`](../ui/12-put-away/)
 
 ### Put away list
 - Heading: Put Away
 - Button: **Add Put Away**
 - List: item, location, quantity
 
-![Put Away list](../ui/feature-12/put-away-list.png)
+![Put Away list](../ui/12-put-away/put-away-list.png)
 
 Empty: "No put aways are available"
 
-![Empty put away list](../ui/feature-12/put-away-list-empty.png)
+![Empty put away list](../ui/12-put-away/put-away-list-empty.png)
 
 Not allowed: "You are not authorized to manage put away"
 
-![Not authorized](../ui/feature-12/put-away-not-authorized.png)
+![Not authorized](../ui/12-put-away/put-away-not-authorized.png)
 
 ### Add Put Away
 - Fields: item, location, quantity, receive or customer return
 - Buttons: **Save**, **Cancel**
 
-![Add Put Away](../ui/feature-12/put-away-add.png)
+![Add Put Away](../ui/12-put-away/put-away-add.png)
 
 Quantity zero or less: "Quantity must be greater than zero"
 
-![Quantity must be greater than zero](../ui/feature-12/put-away-add-bad-quantity.png)
+![Quantity must be greater than zero](../ui/12-put-away/put-away-add-bad-quantity.png)
 
 Quantity more than remaining: "Quantity is more than remaining"
 
-![Quantity is more than remaining](../ui/feature-12/put-away-add-over-remaining.png)
+![Quantity is more than remaining](../ui/12-put-away/put-away-add-over-remaining.png)
 
 ### Put away details
 - Shows item, location, quantity, and source
 
-![Put Away details](../ui/feature-12/put-away-details.png)
+![Put Away details](../ui/12-put-away/put-away-details.png)
 
 ---
 

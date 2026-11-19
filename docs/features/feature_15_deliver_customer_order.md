@@ -196,41 +196,41 @@ Base path: `/api`. Errors: `{ "message": "..." }`. Auth: `Authorization: Bearer 
 
 Menu after login: **Deliver**. Warehouse Manager. Confirm a shipped store order. Retailer does not log in.
 
-Pictures: [`docs/ui/feature-15/`](../ui/feature-15/)
+Pictures: [`docs/ui/15-deliver/`](../ui/15-deliver/)
 
 ### Deliver list
 - Heading: Deliver
 - Button: **Confirm Delivery**
 - List: customer order, confirmation
 
-![Deliver list](../ui/feature-15/deliver-list.png)
+![Deliver list](../ui/15-deliver/deliver-list.png)
 
 Empty: "No deliveries are available"
 
-![Empty deliver list](../ui/feature-15/deliver-list-empty.png)
+![Empty deliver list](../ui/15-deliver/deliver-list-empty.png)
 
 Not allowed: "You are not authorized to manage deliver"
 
-![Not authorized](../ui/feature-15/deliver-not-authorized.png)
+![Not authorized](../ui/15-deliver/deliver-not-authorized.png)
 
 ### Confirm Delivery
 - Fields: customer order, confirmation
 - Buttons: **Save**, **Cancel**
 
-![Confirm Delivery](../ui/feature-15/deliver-confirm.png)
+![Confirm Delivery](../ui/15-deliver/deliver-confirm.png)
 
 Order not shipped: "Order is not shipped"
 
-![Order is not shipped](../ui/feature-15/deliver-not-shipped.png)
+![Order is not shipped](../ui/15-deliver/deliver-not-shipped.png)
 
 Already confirmed: "Delivery is already confirmed"
 
-![Delivery is already confirmed](../ui/feature-15/deliver-already-confirmed.png)
+![Delivery is already confirmed](../ui/15-deliver/deliver-already-confirmed.png)
 
 ### Delivery details
 - Shows customer order and confirmation
 
-![Delivery details](../ui/feature-15/deliver-details.png)
+![Delivery details](../ui/15-deliver/deliver-details.png)
 
 ---
 

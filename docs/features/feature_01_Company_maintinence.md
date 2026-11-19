@@ -264,7 +264,7 @@ Base path: `/api`. Error body: `{ "message": "..." }`. Send `Authorization: Bear
 
 Menu after login: **Company** (System Administrator only). No Company menu on the login screen.
 
-Pictures: [`docs/ui/feature-01/`](../ui/feature-01/)
+Pictures: [`docs/ui/01-company/`](../ui/01-company/)
 
 ### Company list
 - Heading: Company
@@ -272,51 +272,51 @@ Pictures: [`docs/ui/feature-01/`](../ui/feature-01/)
 - List: code, name, email, phone
 - On a row: View, Edit, Delete
 
-![Company list](../ui/feature-01/company-list.png)
+![Company list](../ui/01-company/company-list.png)
 
 Empty: "No companies are available"
 
-![Empty company list](../ui/feature-01/company-list-empty.png)
+![Empty company list](../ui/01-company/company-list-empty.png)
 
 After delete: "Company deleted"
 
-![Company deleted](../ui/feature-01/company-deleted.png)
+![Company deleted](../ui/01-company/company-deleted.png)
 
 Not allowed: "You are not authorized to manage companies"
 
-![Not authorized](../ui/feature-01/company-not-authorized.png)
+![Not authorized](../ui/01-company/company-not-authorized.png)
 
 ### Add Company
 - Fields: code, name, email, phone, address
 - Buttons: **Save**, **Cancel**
 
-![Add Company](../ui/feature-01/company-add.png)
+![Add Company](../ui/01-company/company-add.png)
 
 Duplicate code: "Duplicate company code"
 
-![Duplicate company code](../ui/feature-01/company-add-duplicate.png)
+![Duplicate company code](../ui/01-company/company-add-duplicate.png)
 
 Empty name or code: "Invalid company data"
 
-![Invalid company data](../ui/feature-01/company-add-invalid.png)
+![Invalid company data](../ui/01-company/company-add-invalid.png)
 
 ### Company details
 - Shows company information and linked warehouses
 - Buttons: **Assign Warehouse**, **Edit**, **Delete**
 
-![Company details](../ui/feature-01/company-details.png)
+![Company details](../ui/01-company/company-details.png)
 
 ### Assign Warehouse
 - Choose a warehouse
 - Buttons: **Save**, **Cancel**
 
-![Assign Warehouse](../ui/feature-01/company-assign-warehouse.png)
+![Assign Warehouse](../ui/01-company/company-assign-warehouse.png)
 
 ### Edit Company
 - Same fields as Add
 - Buttons: **Save**, **Cancel**
 
-![Edit Company](../ui/feature-01/company-edit.png)
+![Edit Company](../ui/01-company/company-edit.png)
 
 ---
 

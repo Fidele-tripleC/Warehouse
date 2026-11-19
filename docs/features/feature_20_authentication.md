@@ -267,58 +267,58 @@ Base path: `/api`. Error body: `{ "message": "..." }`.
 
 Menu before login: app name **Warehouse Management System** only. No Company. No Warehouse.
 
-Pictures: [`docs/ui/feature-20/`](../ui/feature-20/)
+Pictures: [`docs/ui/20-authentication/`](../ui/20-authentication/)
 
 ### Log in
 - Email, Password
 - Button: **Log in**
 - Link: **Forgot password?**
 
-![Log in](../ui/feature-20/login.png)
+![Log in](../ui/20-authentication/login.png)
 
 Wrong login: "Invalid email or password"
 
-![Wrong login](../ui/feature-20/login-error.png)
+![Wrong login](../ui/20-authentication/login-error.png)
 
 ### Forgot password — send code
 - Email
 - Buttons: **Send code**, **Cancel**
 
-![Forgot password](../ui/feature-20/forgot-password.png)
+![Forgot password](../ui/20-authentication/forgot-password.png)
 
 Message: "A code was sent to your email"
 
-![Code sent](../ui/feature-20/forgot-password-code-sent.png)
+![Code sent](../ui/20-authentication/forgot-password-code-sent.png)
 
 Unknown email: "Email is not in the system"
 
-![Email is not in the system](../ui/feature-20/forgot-password-email-not-found.png)
+![Email is not in the system](../ui/20-authentication/forgot-password-email-not-found.png)
 
 ### Forgot password — new password
 - Code, New password
 - Buttons: **Reset Password**, **Cancel**
 
-![Reset password](../ui/feature-20/reset-password.png)
+![Reset password](../ui/20-authentication/reset-password.png)
 
 Wrong code: "Invalid code"
 
-![Invalid code](../ui/feature-20/reset-password-invalid-code.png)
+![Invalid code](../ui/20-authentication/reset-password-invalid-code.png)
 
 ### After login
 - Menu: **Company**, **Warehouse**, and the other warehouse pages
 - **Log out**
 
-![After login](../ui/feature-20/after-login.png)
+![After login](../ui/20-authentication/after-login.png)
 
 ### Add user (System Administrator)
 - Email, password, role
 - Buttons: **Save**, **Cancel**
 
-![Add user](../ui/feature-20/add-user.png)
+![Add user](../ui/20-authentication/add-user.png)
 
 Duplicate: "Duplicate email"
 
-![Duplicate email](../ui/feature-20/add-user-duplicate-email.png)
+![Duplicate email](../ui/20-authentication/add-user-duplicate-email.png)
 
 ---
 

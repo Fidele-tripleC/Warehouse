@@ -189,7 +189,7 @@ Base path: `/api`. Errors: `{ "message": "..." }`. Auth: `Authorization: Bearer 
 
 Menu after login: **Employee**. Employee Manager. No Company menu on this role.
 
-Pictures: [`docs/ui/feature-06/`](../ui/feature-06/)
+Pictures: [`docs/ui/06-employee/`](../ui/06-employee/)
 
 ### Employee list
 - Heading: Employee
@@ -197,37 +197,37 @@ Pictures: [`docs/ui/feature-06/`](../ui/feature-06/)
 - List: name, company, email
 - On a row: View, Edit, Delete
 
-![Employee list](../ui/feature-06/employee-list.png)
+![Employee list](../ui/06-employee/employee-list.png)
 
 Empty: "No employees are available"
 
-![Empty employee list](../ui/feature-06/employee-list-empty.png)
+![Empty employee list](../ui/06-employee/employee-list-empty.png)
 
 After delete: "Employee deleted"
 
-![Employee deleted](../ui/feature-06/employee-deleted.png)
+![Employee deleted](../ui/06-employee/employee-deleted.png)
 
 Not allowed: "You are not authorized to manage employees"
 
-![Not authorized](../ui/feature-06/employee-not-authorized.png)
+![Not authorized](../ui/06-employee/employee-not-authorized.png)
 
 ### Add Employee
 - Fields: name, company, email
 - Buttons: **Save**, **Cancel**
 
-![Add Employee](../ui/feature-06/employee-add.png)
+![Add Employee](../ui/06-employee/employee-add.png)
 
 ### Employee details
 - Shows employee information
 - Buttons: **Edit**, **Delete**
 
-![Employee details](../ui/feature-06/employee-details.png)
+![Employee details](../ui/06-employee/employee-details.png)
 
 ### Edit Employee
 - Same fields as Add
 - Buttons: **Save**, **Cancel**
 
-![Edit Employee](../ui/feature-06/employee-edit.png)
+![Edit Employee](../ui/06-employee/employee-edit.png)
 
 ---
 
